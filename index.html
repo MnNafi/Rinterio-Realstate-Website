@@ -42,8 +42,9 @@
             },
 
             padding: {
-              "lg-section-side-padding": "100px 125px 100px 125px",
-              "section-side-padding": "32px 20px 32px 20px",
+              "lg-section-side-padding": "100px 135px 0px 135px",
+              "section-side-padding": "32px 20px 0px 20px",
+              "md-section-side-padding": "72px 32px 0px 32px",
             },
             // Custom Backgound color
             backgroundImage: {
@@ -201,9 +202,9 @@
 
     <!-- Main Section Start Here-->
     <main>
-      <div class="bg-bg-gray">
+      <div class="bg-bg-gray lg: pb-[100px]">
         <section
-          class="p-section-side-padding lg:p-lg-section-side-padding w-full lg:relative"
+          class="p-section-side-padding lg:p-lg-section-side-padding md:p-md-section-side-padding w-full lg:relative"
         >
           <img
             class="hidden lg:block lg:absolute left-[87px] top-14"
@@ -223,13 +224,13 @@
                 >
                   We Design Thoughtful, <br />liveable spaces
                 </h1>
-                <p class="py-6">
+                <p class="py-6 text-grey-5 text-center lg:text-left">
                   The barn house captivates with its blend of rustic charm and
                   modern sophistication, featuring weathered wood, sleek metal
                   accents.
                 </p>
 
-                <div class="space-y-4 flex flex-col">
+                <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-1">
                   <div
                     class="p-6 rounded-2xl bg-white flex gap-6 items-start lg:items-center"
                   >
@@ -259,12 +260,144 @@
               </div>
               <img
                 src="assets/Rectangle.png"
-                class="object-cover rounded-2xl shadow-2xl h-[230px] w-full lg:w-[575px] lg:h-auto"
+                class="object-cover rounded-2xl shadow-2xl h-[230px] w-full md:h-[385px] lg:w-[575px] lg:h-auto"
               />
             </div>
           </div>
         </section>
+
+        <!-- Counter Section Start Here -->
+        <section
+          class="p-section-side-padding lg:p-lg-section-side-padding md:p-md-section-side-padding w-full lg:relative"
+        >
+          <div
+            class="p-6 bg-white grid rounded-3xl lg:grid-cols-4 lg:p-8 md:grid-cols-2"
+          >
+            <div class="p-5 flex flex-col items-center lg:p-6">
+              <img src="assets/review.png" alt="" />
+              <h3
+                class="text-3xl font-extrabold text-grey-5 mt-3 lg:text-[40px]"
+              >
+                235+
+              </h3>
+              <p class="font-medium text-grey-4">Happy Client Review</p>
+            </div>
+
+            <div class="p-5 flex flex-col items-center lg:p-6">
+              <img src="assets/departement.png" alt="" />
+              <h3
+                class="text-3xl font-extrabold text-grey-5 mt-3 lg:text-[40px]"
+              >
+                50+
+              </h3>
+              <p class="font-medium text-grey-4">Work Departments</p>
+            </div>
+
+            <div class="p-5 flex flex-col items-center lg:p-6">
+              <img src="assets/happy-client.png" alt="" />
+              <h3
+                class="text-3xl font-extrabold text-grey-5 mt-3 lg:text-[40px]"
+              >
+                30k +
+              </h3>
+              <p class="font-medium text-grey-4">Our Happy Clients</p>
+            </div>
+
+            <div class="p-5 flex flex-col items-center lg:p-6">
+              <img src="assets/user-multiple.png" alt="" />
+              <h3
+                class="text-3xl font-extrabold text-grey-5 mt-3 lg:text-[40px]"
+              >
+                307+
+              </h3>
+              <p class="font-medium text-grey-4">Staff Members</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- How We Work Section Code Start Here -->
+        <section
+          class="p-section-side-padding lg:p-lg-section-side-padding md:p-md-section-side-padding w-full lg:relative"
+        >
+          <div class="flex flex-col items-center">
+            <button
+              class="btn bg-white rounded-3xl font-bold text-grey-5 mx-auto mb-4"
+            >
+              <img src="assets/arrow-btn-white.svg" alt="" />How We Work
+            </button>
+            <h1
+              class="text-2xl font-bold text-center lg:text-[40px] text-grey-6"
+            >
+              Our Works Process
+            </h1>
+            <p class="py-6 text-grey-5 text-center max-w-[675px]">
+              The barn house captivates with its blend of rustic charm and
+              modern sophistication, featuring weathered wood, sleek metal
+              accents.
+            </p>
+          </div>
+
+          <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+            <div class="p-6 bg-[#E7C1D3] rounded-2xl">
+              <img src="assets/concept.png" alt="" />
+              <h3 class="text-xl font-extrabold text-grey-7 mt-3">Concept</h3>
+              <p class="font-medium text-grey-5">
+                The barn house captivates with its blend of rustic charm and
+                modern.
+              </p>
+            </div>
+            <div class="p-6 bg-[#EFDA6E] rounded-2xl">
+              <img src="assets/flow-chart.png" alt="" />
+              <h3 class="text-xl font-extrabold text-grey-7 mt-3">
+                Design Process
+              </h3>
+              <p class="font-medium text-grey-5">
+                The barn house captivates with its blend of rustic charm and
+                modern.
+              </p>
+            </div>
+            <div class="p-6 bg-[#A4DAC3] rounded-2xl">
+              <img src="assets/vision.png" alt="" />
+              <h3 class="text-xl font-extrabold text-grey-7 mt-3">
+                Supervision
+              </h3>
+              <p class="font-medium text-grey-5">
+                The barn house captivates with its blend of rustic charm and
+                modern.
+              </p>
+            </div>
+            <div class="p-6 bg-[#77AAEA] rounded-2xl">
+              <img src="assets/budget-planning.png " alt="" />
+              <h3 class="text-xl font-extrabold text-grey-7 mt-3">
+                Budget Planning
+              </h3>
+              <p class="font-medium text-grey-5">
+                The barn house captivates with its blend of rustic charm and
+                modern.
+              </p>
+            </div>
+          </div>
+        </section>
       </div>
+
+      <section
+        class="p-section-side-padding lg:p-lg-section-side-padding md:p-md-section-side-padding w-full lg:relative"
+      >
+        <div class="flex flex-col items-center">
+          <button
+            class="btn bg-white rounded-3xl font-bold text-grey-5 mx-auto mb-4"
+          >
+            <img src="assets/arrow-btn-white.svg" alt="" />How We Work
+          </button>
+          <h1 class="text-2xl font-bold text-center lg:text-[40px] text-grey-6">
+            Our Works Process
+          </h1>
+          <p class="py-6 text-grey-5 text-center max-w-[675px]">
+            The barn house captivates with its blend of rustic charm and modern
+            sophistication, featuring weathered wood, sleek metal accents.
+          </p>
+        </div>
+      </section>
     </main>
     <!-- Main Section Ends Here -->
 
