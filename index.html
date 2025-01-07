@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rinterio</title>
+
+    <!-- Daisy UI with Tailwind CND -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Goggle Font for Manrope-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom Tailwind CSS -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            // Custom Webpage Color
+            colors: {
+              "color-primary": "#ABEF5F",
+              "grey-4": "#737373",
+              "grey-5": "#494949",
+              "grey-6": "#212121 ",
+              "grey-7": "#1C1C1C",
+              "bg-button": "rgba(171, 239, 95, 0.50)",
+              "bg-gray": "#F4F4F4",
+            },
+            // cumtom Font Family
+            fontFamily: {
+              manrope: ["Manrope", "sans-serif"],
+            },
+
+            padding: {
+              "lg-section-side-padding": "100px 125px 100px 125px",
+              "section-side-padding": "32px 20px 32px 20px",
+            },
+            // Custom Backgound color
+            backgroundImage: {
+              "header-gradient":
+                "linear-gradient(0deg, #fff 0%, rgba(255, 255, 255, 0.00) 100%)",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body class="font-manrope">
+    <!-- Header Section Start Here -->
+    <header
+      class="px-5 md:px-8 lg:px-[135px] pt-9 lg:pt-14 md:pt-10 bg-header-gradient w-full"
+    >
+      <div
+        class="navbar bg-base-100 p-0 justify-between bg-transparent min-h-0"
+      >
+        <div class="space-x-2">
+          <div class="p-3 bg-color-primary rounded-full">
+            <img class="h-3" src="assets/arrow-logo.svg" alt="" />
+          </div>
+          <a class="text-3xl font-extrabold p-0 text-grey-6">Rinterio</a>
+        </div>
+
+        <!-- Desktop Menu is Here -->
+        <div class="hidden lg:flex md:hidden">
+          <ul class="menu menu-horizontal px-1">
+            <li><a class="text-grey-5 font-extrabold">Home</a></li>
+            <li><a>Services</a></li>
+            <li><a>Portfolio</a></li>
+            <li><a>Blogs</a></li>
+            <li><a>Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Code For Search Icon -->
+        <div class="space-x-4">
+          <div class="hidden md:flex lg:flex lg:items-center space-x-4">
+            <button class="btn btn-circle bg-white p-3 rounded-full">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6 text-grey-4"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                />
+              </svg>
+            </button>
+            <div class="dropdown">
+              <div
+                tabindex="0"
+                role="button"
+                class="btn btn-circle bg-white p-3 rounded-full"
+              >
+                <div class="indicator">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6 text-grey-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                    />
+                  </svg>
+                  <span class="badge badge-sm indicator-item">8</span>
+                </div>
+              </div>
+              <div
+                tabindex="0"
+                class="card card-compact dropdown-content bg-base-100 z-[1] mt-3 w-52 shadow"
+              >
+                <div class="card-body">
+                  <span class="text-lg font-bold">8 Items</span>
+                  <span class="text-info">Subtotal: $999</span>
+                  <div class="card-actions">
+                    <button class="btn btn-primary btn-block">View cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="btn bg-color-primary rounded-[32px]">
+              <p class="text-xl font-extrabold">Book Consult</p>
+              <img
+                class="p-3 bg-grey-7 rounded-full"
+                src="assets/arrow-icon-white.svg"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="dropdown lg:hidden">
+            <div
+              tabindex="0"
+              role="button"
+              class="btn bg-white rounded-full p-3 min-h-0 h-auto"
+            >
+              <img src="assets/burger-menu.svg" alt="" />
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 p-2 shadow right-0"
+            >
+              <li><a>Home</a></li>
+              <li><a>Services</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>Blogs</a></li>
+              <li><a>Contact Us</a></li>
+            </ul>
+          </div>
+          <!-- Mobile view navbar ends -->
+        </div>
+      </div>
+
+      <!-- Hero Section design Start Here-->
+      <div class="hero bg-transparent min-h-screen">
+        <div class="hero-content text-center p-0">
+          <div class="">
+            <img class="mx-auto" src="assets/banner.png" alt="" />
+            <h1 class="lg:text-6xl text-3xl font-extrabold">
+              A barn house of this design has a striking appearance
+            </h1>
+            <p class="py-6 font-medium">
+              The barn house captivates with its blend of rustic charm and
+              modern sophistication, featuring weathered wood, sleek metal
+              accents, and large windows that flood the space with natural
+              light.
+            </p>
+            <button
+              class="btn bg-bg-button border-solid border-color-primary rounded-[32px]"
+            >
+              <p class="text-xl font-bold">View Details</p>
+              <div class="p-3 bg-color-primary rounded-full">
+                <img class="h-3" src="assets/arrow-logo.svg" alt="" />
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header Section Ends Here -->
+
+    <!-- Main Section Start Here-->
+    <main>
+      <div class="bg-bg-gray">
+        <section
+          class="p-section-side-padding lg:p-lg-section-side-padding w-full lg:relative"
+        >
+          <img
+            class="hidden lg:block lg:absolute left-[87px] top-14"
+            src="assets/Vector.png"
+            alt=""
+          />
+          <div class="hero">
+            <div class="hero-content flex-col lg:flex-row p-0 w-full">
+              <div class="flex justify-center flex-col lg:justify-start">
+                <button
+                  class="btn bg-white rounded-3xl font-bold text-grey-5 mx-auto lg:ml-0 mb-4"
+                >
+                  <img src="assets/arrow-btn-white.svg" alt="" />About Us
+                </button>
+                <h1
+                  class="text-2xl font-bold text-center lg:text-left lg:text-[40px] text-grey-6"
+                >
+                  We Design Thoughtful, <br />liveable spaces
+                </h1>
+                <p class="py-6">
+                  The barn house captivates with its blend of rustic charm and
+                  modern sophistication, featuring weathered wood, sleek metal
+                  accents.
+                </p>
+
+                <div class="space-y-4 flex flex-col">
+                  <div
+                    class="p-6 rounded-2xl bg-white flex gap-6 items-start lg:items-center"
+                  >
+                    <img src="assets/commercial.png" alt="" />
+                    <div>
+                      <h3 class="font-extrabold text-grey-5">Commercial</h3>
+                      <p class="font-medium text-grey-4">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Quibusdam sed id commodi.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div
+                    class="p-6 rounded-2xl bg-white flex gap-6 items-start lg:items-center"
+                  >
+                    <img src="assets/commercial.png" alt="" />
+                    <div>
+                      <h3 class="font-extrabold text-grey-5">Commercial</h3>
+                      <p class="font-medium text-grey-4">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Quibusdam sed id commodi.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <img
+                src="assets/Rectangle.png"
+                class="object-cover rounded-2xl shadow-2xl h-[230px] w-full lg:w-[575px] lg:h-auto"
+              />
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- Main Section Ends Here -->
+
+    <!-- Footer Section Start Here -->
+    <footer></footer>
+    <!-- Footer Section Ends Here -->
+  </body>
+</html>
